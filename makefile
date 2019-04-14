@@ -1,11 +1,9 @@
 JFLAGS = -g
 JC=javac
 
-#Main: Main.class
-
-Main.class: Main.java
-	$(JC) $(JFLAGS) Main.java
+Main.class: *.java
+	$(JC) $(JFLAGS) *.java
 	java Main
 
 clean: 
-	$(RM) Main.class
+	$(RM) *.class
